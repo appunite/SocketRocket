@@ -1,0 +1,26 @@
+module SocketRocket {
+    umbrella header "SocketRocket.h"
+
+    export *
+    module * { export * }
+
+    explicit module Internal {
+        header "../../Internal/SRConstants.h"
+        header "../../Internal/Delegate/SRDelegateController.h"
+        header "../../Internal/Proxy/SRProxyConnect.h"
+        header "../../Internal/RunLoop/SRRunLoopThread.h"
+        header "../../Internal/Security/SRPinningSecurityPolicy.h"
+        header "../../Internal/NSRunLoop+SRWebSocketPrivate.h"
+        header "../../Internal/NSURLRequest+SRWebSocketPrivate.h"
+        header "../../Internal/Utilities/SRHash.h"
+        header "../../Internal/Utilities/SRLog.h"
+        header "../../Internal/Utilities/SRMutex.h"
+        header "../../Internal/Utilities/SRHTTPConnectMessage.h"
+        header "../../Internal/Utilities/SRSIMDHelpers.h"
+        header "../../Internal/Utilities/SRRandom.h"
+        header "../../Internal/Utilities/SRURLUtilities.h"
+        header "../../Internal/Utilities/SRError.h"
+        header "../../Internal/IOConsumer/SRIOConsumer.h"
+        header "../../Internal/IOConsumer/SRIOConsumerPool.h"
+    }
+}

@@ -31,6 +31,16 @@ SocketRocket currently conforms to all core ~300 of [Autobahn](http://autobahn.w
 
 There are a few options. Choose one, or just figure it out:
 
+- **[Swift Package Manager](https://swift.org/package-manager/)**
+
+ Add SocketRocket as a dependency in your `Package.swift` file:
+ ```swift
+ dependencies: [
+     .package(url: "https://github.com/facebook/SocketRocket.git", from: "0.7.1")
+ ]
+ ```
+ Or add it directly in Xcode via File > Add Package Dependencies and enter the repository URL.
+
 - **[CocoaPods](https://cocoapods.org)**
 
  Add the following line to your Podfile:
@@ -38,7 +48,7 @@ There are a few options. Choose one, or just figure it out:
  pod 'SocketRocket'
  ```
  Run `pod install`, and you are all set.
-  
+
 - **[Carthage](https://github.com/carthage/carthage)**
 
  Add the following line to your Cartfile:
